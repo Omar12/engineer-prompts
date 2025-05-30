@@ -237,3 +237,104 @@ CLI/Terminal Use (bash alias or script)
 `alias gpt-gen='gh copilot prompt "Generate JavaScript code that does X..."'`
 
 ---
+Great choices! Here are tailored prompt templates for:
+	1.	Code Review Feedback
+	2.	Senior Engineer Pair Programming
+	3.	Code Refactoring Suggestions
+
+Each is built with structured components you can reuse and adapt. These help LLMs act like a thoughtful engineering partner—whether you’re requesting a review, brainstorming with a “pair,” or rewriting for clarity and performance.
+
+⸻
+
+🔍 1. Code Review Feedback Prompt
+
+Use this when you want the AI to critique your code like a senior engineer.
+
+### Role:
+Act as a Senior Frontend Engineer conducting a code review.
+
+### Task:
+Provide code review feedback focusing on correctness, readability, performance, and best practices.
+
+### Context:
+- Tech stack: [e.g. React + TypeScript + TailwindCSS]
+- This component is part of a [feature/page/module name].
+- Intended behavior: [briefly describe what it should do]
+
+### Code:
+```tsx
+// Paste your code here
+
+Review Guidelines:
+	•	Point out any bugs or logic issues.
+	•	Suggest improvements to naming, structure, or clarity.
+	•	Recommend performance or accessibility improvements.
+	•	Assume you’re giving feedback to a mid-level engineer.
+
+---
+
+## 🤝 2. Senior Engineer Pair Programming Prompt
+
+Use this to get collaborative-style help, idea generation, or guidance.
+
+Role:
+
+Act as a Senior Frontend Engineer pair programming with me.
+
+Task:
+
+Help me build [describe the component/feature briefly].
+
+Context:
+	•	Tech stack: [e.g. React 18, Next.js, TypeScript, TailwindCSS]
+	•	Current progress: [I’ve built the form, working on validation…]
+	•	Roadblock: [I’m unsure how to handle X, or which pattern to use for Y]
+
+Expectations:
+	•	Ask clarifying questions like a real pair.
+	•	Offer tradeoffs between solutions.
+	•	Guide me but don’t take over—let me think aloud if needed.
+
+This format encourages the AI to act more like a thought partner and less like a code machine.
+
+---
+
+## 🛠 3. Code Refactoring Prompt
+
+Use this when you want the AI to clean up messy code or improve it while preserving behavior.
+
+Role:
+
+Act as a Senior Software Engineer who specializes in clean code and refactoring.
+
+Task:
+
+Refactor the code below to improve readability, maintainability, and performance without changing its external behavior.
+
+Context:
+	•	Tech stack: [e.g. JavaScript with React]
+	•	The code currently works, but it’s difficult to understand and maintain.
+	•	Prefer functional style / use hooks / use async/await, etc. (optional)
+
+Code:
+
+// Paste your current implementation
+
+Goals:
+	•	Improve naming and structure.
+	•	Eliminate redundant or nested logic.
+	•	Break large functions into smaller ones.
+	•	Optional: Add comments or docstrings for clarity.
+
+---
+
+## ⚙️ Bonus: Combine Prompts
+
+You can also *chain* these prompts. For example:
+
+> “First, refactor this code. Then give a code review on your own refactored version.”
+
+---
+
+Would you like me to create **fill-in-the-blank templates** in Notion/Markdown for reuse? Or generate prompt buttons for a custom GPT workspace?
+
