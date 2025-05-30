@@ -1,13 +1,12 @@
-# Engineer Prompts
+# 🧰 LLM Prompt Template Pack for Software Dev Tasks
 
  Below is a Prompt Engineering Template Pack for Software Development, designed for reuse and integration into your tools or workflow (e.g., with VS Code snippets, CLI tools, or custom GPT wrappers).
 
-⸻
+---
 
-🧰 LLM Prompt Template Pack for Software Dev Tasks
+## 🧱 1. Code Generation
 
-🧱 1. Code Generation
-
+```
 Generate [language] code that [brief functionality description].
 
 Requirements:
@@ -17,12 +16,13 @@ Requirements:
 
 Example: 
 Generate a Python function that takes a list of numbers and returns the median value. No external libraries.
-
+```
 
 ---
 
-🧼 2. Code Refactoring
+## 🧼 2. Code Refactoring
 
+```
 Refactor the following code to improve [clarity / performance / DRY / readability].
 
 Constraints:
@@ -30,12 +30,13 @@ Constraints:
 
 Original Code:
 [Insert code snippet here]
-
+```
 
 ---
 
-🐞 3. Debugging
+## 🐞 3. Debugging
 
+```
 Analyze and fix the following code. It's producing this error: “[error message]”.
 
 Expected behavior: [what should happen]
@@ -45,12 +46,13 @@ Code:
 [Insert buggy code here]
 
 What’s the root cause, and how can I fix it?
-
+```
 
 ---
 
-🧪 4. Unit Test Generation
+## 🧪 4. Unit Test Generation
 
+```
 Write [unit/integration] tests for the following [function/class/component] using [testing framework].
 
 - Cover normal use cases and edge cases.
@@ -58,35 +60,40 @@ Write [unit/integration] tests for the following [function/class/component] usin
 
 Code:
 [Insert code to test]
-
+```
 ---
 
-📘 5. Documentation / Inline Comments
+## 📘 5. Documentation / Inline Comments
 
+```
 Document the following [function/class] using [JSDoc/docstring/inline comments].
 
 Code:
 [Insert code snippet]
 
 Style guide: [Optional—Google, PEP-8, etc.]
+```
 
 ---
 
-🧠 Bonus: Explain Code
+## 🧠 Bonus: Explain Code
 
+```
 Explain what the following [JavaScript/Python/etc.] code does, line by line.
 
 Code:
 [Insert code here]
 
 Use plain language suitable for a junior developer.
+```
 
 ---
 
-🔌 Suggested Integrations
+## 🔌 Suggested Integrations
 
 VS Code Snippet (example for code generation)
 
+```
 "LLM: Generate Function": {
   "prefix": "llm-gen-func",
   "body": [
@@ -101,6 +108,7 @@ VS Code Snippet (example for code generation)
   ],
   "description": "Template for generating functions using LLM"
 }
+```
 
 CLI/Terminal Use (bash alias or script)
 
