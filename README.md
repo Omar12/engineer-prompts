@@ -325,11 +325,3 @@ VS Code Snippet (example for code generation)
 `alias gpt-gen='gh copilot prompt "Generate JavaScript code that does X..."'`
 
 ---
-Great choices! Here are tailored prompt templates for:
-	1.	Code Review Feedback
-	2.	Senior Engineer Pair Programming
-	3.	Code Refactoring Suggestions
-
-Each is built with structured components you can reuse and adapt. These help LLMs act like a thoughtful engineering partner—whether you’re requesting a review, brainstorming with a “pair,” or rewriting for clarity and performance.
-
----
